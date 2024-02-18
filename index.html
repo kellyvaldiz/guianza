@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guianza</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            top: -510px;
+            left: 587px;
+            width: 50px;
+            height: 35px;
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        #miBoton2 {
+            position: relative;
+            top: -438px;
+            left: 533px;
+        }
+
+        #miBoton3 {
+            position: relative;
+            top: -358px;
+            left: 478px;
+        }
+
+        #miBoton4 {
+            position: relative;
+            top: -288px;
+            left: 423px;
+        }
+
+        #miBoton5 {
+            position: relative;
+            top: -215px;
+            left: 369px;
+        }
+
+        #miBoton6 {
+            position: relative;
+            top: -142px;
+            left: 315px;
+        }
+
+        #miBoton7 {
+            position: relative;
+            top: -76px;
+            left: 260px;
+        }
+
+        img {
+            width: 1300px;
+            height: 600px;
+        }
+
+        body {
+            background-color: #EBF6EC;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/fondo.png" alt="">
+    <button id="miBoton1" onclick="cambiarTexto1()"></button>
+    <button id="miBoton2" onclick="cambiarTexto2()"></button>
+    <button id="miBoton3" onclick="cambiarTexto3()"></button>
+    <button id="miBoton4" onclick="cambiarTexto4()"></button>
+    <button id="miBoton5" onclick="cambiarTexto5()"></button>
+    <button id="miBoton6" onclick="cambiarTexto6()"></button>
+    <button id="miBoton7" onclick="cambiarTexto7()"></button>
+
+
+    <script>
+    var textoAlternante = false;
+    var textoAlternante2 = false;
+    var textoAlternante3 = false;
+    var textoAlternante4 = false;
+    var textoAlternante5 = false;
+    var textoAlternante6 = false;
+    var textoAlternante7 = false;
+
+
+    function cambiarTexto1() {
+        var boton = document.getElementById("miBoton1");
+        if (textoAlternante == false) {
+            boton.textContent = "✔";
+        } else {
+            boton.textContent = "";
+        }
+        textoAlternante = !textoAlternante;
+    }
+
+    function cambiarTexto2() {
+        var boton = document.getElementById("miBoton2");
+        if (textoAlternante2 == false) {
+            boton.textContent = "✔";
+        } else {
+            boton.textContent = "";
+        }
+        textoAlternante2 = !textoAlternante2;
+    }
+
+    function cambiarTexto3() {
+        var boton = document.getElementById("miBoton3");
+        if (textoAlternante3 == false) {
+            boton.textContent = "✔";
+        } else {
+            boton.textContent = "";
+        }
+        textoAlternante3 = !textoAlternante3;
+    }
+
+    function cambiarTexto4() {
+        var boton = document.getElementById("miBoton4");
+        if (textoAlternante4 == false) {
+            boton.textContent = "✔";
+        } else {
+            boton.textContent = "";
+        }
+        textoAlternante4 = !textoAlternante4;
+    }
+
+    function cambiarTexto5() {
+        var boton = document.getElementById("miBoton5");
+        if (textoAlternante5 == false) {
+            boton.textContent = "✔";
+        } else {
+            boton.textContent = "";
+        }
+        textoAlternante5 = !textoAlternante5;
+    }
+
+    function cambiarTexto6() {
+        var boton = document.getElementById("miBoton6");
+        if (textoAlternante6 == false) {
+            boton.textContent = "✔";
+        } else {
+            boton.textContent = "";
+        }
+        textoAlternante6 = !textoAlternante6;
+    }
+
+    function cambiarTexto7() {
+        var boton = document.getElementById("miBoton7");
+        if (textoAlternante7 == false) {
+            boton.textContent = "✔";
+        } else {
+            boton.textContent = "";
+        }
+        textoAlternante7 = !textoAlternante7;
+    }
+    </script>
+</body>
+</html>
